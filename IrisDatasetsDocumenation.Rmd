@@ -1,0 +1,15 @@
+---
+title: "DvelopingDataProducts Assignment"
+date: "Saturday, March 21, 2015"
+output: html_document
+---
+
+
+
+The dataset used for this assignment is iris data set available in R. This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
+
+The purpose of this exercise is to build a predictive model that would predict the Species of the flower with Sepal.Length, Sepal.Width, Petal.Length and Petal.Width as predictor variables. 
+ 
+ As this dataset is available in R itself so user doesn't have to download dataset user has to copy the server.R and ui.R in Rstudio and run the coe using RunApp.
+
+
