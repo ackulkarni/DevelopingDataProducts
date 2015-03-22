@@ -1,0 +1,66 @@
+---
+title: "Coursera Developing Data Products Project Assignment"
+author: Ack
+date: "Tuesday, March 17, 2015"
+output: ioslides_presentation
+runtime: shiny
+transition: rotate
+autosize: true
+---
+
+## Introduction
+
+The dataset used for this assignment is iris data set available in R. This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica.
+
+The purpose of this exercise is to build a predictive model that would predict the Species of the flower with Sepal.Length, Sepal.Width, Petal.Length and Petal.Width as predictor variables. 
+
+
+
+## Dataset Details
+
+```{r, echo=FALSE}
+
+
+summary(iris)
+```
+---
+
+```{r,echo=FALSE}
+str(iris)
+
+
+
+```
+
+
+## Slide with R Code and Output
+
+```{r}
+fit <- lm(Petal.Width ~ Sepal.Length + Sepal.Width + Petal.Length, data=iris)
+fit
+
+
+```
+##plot
+```{r,echo=FALSE}
+
+plot(iris)
+
+```
+
+
+## Solutions
+
+The Solution was built using shiny package in shiny  server.
+This model is fitted with the linear model function for multiple regression.
+"Species" is the outcome variable and Sepal.Length, Sepal.Width, Petal.Length and
+Petal.Width as predictor variables.
+Once the user enters the value and click "submit", the predicted Species output can be seen on the main panel
+The code has been shared on github and can be accessed at the below location -
+
+  https://github.com/ackulkarni/DevelopingDataProducts
+and output can be viewd on shinyApp
+  
+ http://ackcoursera.shinyapps.io/DevelopingDataProducts
+ 
+ 
